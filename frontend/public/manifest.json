@@ -1,0 +1,27 @@
+{
+  "short_name": "Smart Cooking",
+  "name": "Smart Cooking - Ricette AI",
+  "description": "Genera ricette deliziose con intelligenza artificiale partendo dai tuoi ingredienti",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#E05D3A",
+  "background_color": "#FDFBF7",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "it",
+  "categories": ["food", "lifestyle", "utilities"]
+}
