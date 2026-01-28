@@ -68,7 +68,7 @@ class SmartCookingAPITester:
 
     def test_user_registration(self):
         """Test user registration"""
-        test_email = f"test_{uuid.uuid4().hex[:8]}@smartcooking.test"
+        test_email = f"test_{uuid.uuid4().hex[:8]}@example.com"
         test_data = {
             "email": test_email,
             "password": "TestPassword123!",
