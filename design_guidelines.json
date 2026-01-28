@@ -1,0 +1,190 @@
+{
+  "project_name": "Smart Cooking PWA",
+  "design_philosophy": {
+    "identity": "E1: The Anti-AI Designer",
+    "concept": "Digital Trattoria - Fusion of Rustic Italian & Modern AI",
+    "core_principles": [
+      "Fusion over Imitation: Mix 'Nonna's Kitchen' warmth with 'Sci-Fi' AI precision.",
+      "Emotion First: Every screen must feel appetizing and welcoming.",
+      "Content is King: Recipes are the heroes; UI frames them like art.",
+      "Zoom In: Use macro photography for ingredients to evoke taste.",
+      "Negative Space: Generous padding to mimic a clean kitchen counter."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif"
+    },
+    "installation_command": "yarn add @fontsource/playfair-display @fontsource/manrope",
+    "usage_rules": {
+      "headings": "Use Playfair Display for all H1-H3. Font weights: 600 or 700. Tracking: tight.",
+      "body": "Use Manrope for all UI text, inputs, and recipes. Font weights: 400, 500, 600.",
+      "special": "Use italic Playfair Display for 'Chef's Notes' or 'AI Tips'."
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#E05D3A",
+        "foreground": "#FFFFFF",
+        "description": "Terra Cotta - Warm, energetic, appetizing"
+      },
+      "secondary": {
+        "DEFAULT": "#5C6B45",
+        "foreground": "#FFFFFF",
+        "description": "Olive Grove - Fresh, organic, balanced"
+      },
+      "background": {
+        "DEFAULT": "#FDFBF7",
+        "description": "Flour - Warm off-white, paper-like"
+      },
+      "foreground": {
+        "DEFAULT": "#2C2420",
+        "description": "Espresso - Deep warm brown, softer than black"
+      },
+      "card": {
+        "DEFAULT": "#FFFFFF",
+        "foreground": "#2C2420"
+      },
+      "muted": {
+        "DEFAULT": "#F5F2EB",
+        "foreground": "#8C8480"
+      },
+      "accent": {
+        "DEFAULT": "#F4B942",
+        "foreground": "#2C2420",
+        "description": "Golden Yolk - For ratings and highlights"
+      },
+      "border": {
+        "DEFAULT": "#E6E0D6"
+      }
+    },
+    "css_variables": {
+      "root": {
+        "--background": "40 20% 98%",
+        "--foreground": "15 15% 15%",
+        "--card": "0 0% 100%",
+        "--card-foreground": "15 15% 15%",
+        "--popover": "0 0% 100%",
+        "--popover-foreground": "15 15% 15%",
+        "--primary": "13 75% 55%",
+        "--primary-foreground": "0 0% 100%",
+        "--secondary": "84 22% 35%",
+        "--secondary-foreground": "0 0% 100%",
+        "--muted": "40 20% 94%",
+        "--muted-foreground": "15 5% 52%",
+        "--accent": "40 90% 61%",
+        "--accent-foreground": "15 15% 15%",
+        "--destructive": "0 84.2% 60.2%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "40 20% 87%",
+        "--input": "40 20% 87%",
+        "--ring": "13 75% 55%",
+        "--radius": "0.75rem"
+      },
+      "dark": {
+        "--background": "15 15% 10%",
+        "--foreground": "40 20% 98%",
+        "--card": "15 15% 12%",
+        "--card-foreground": "40 20% 98%",
+        "--popover": "15 15% 12%",
+        "--popover-foreground": "40 20% 98%",
+        "--primary": "13 75% 55%",
+        "--primary-foreground": "0 0% 100%",
+        "--secondary": "84 22% 35%",
+        "--secondary-foreground": "0 0% 100%",
+        "--muted": "15 15% 15%",
+        "--muted-foreground": "40 10% 65%",
+        "--accent": "40 90% 61%",
+        "--accent-foreground": "15 15% 15%",
+        "--destructive": "0 62.8% 30.6%",
+        "--destructive-foreground": "0 0% 98%",
+        "--border": "15 15% 20%",
+        "--input": "15 15% 20%",
+        "--ring": "13 75% 55%"
+      }
+    }
+  },
+  "layout": {
+    "spacing_system": "Generous. Use p-6 or p-8 for containers. Gap-4 or Gap-6 for grids.",
+    "grid_strategy": "Mobile-first. Single column (grid-cols-1) for mobile. Two columns (grid-cols-2) for tablet. Masonry/Bento for desktop recipe feeds.",
+    "container_style": "Rounded-xl or Rounded-2xl. No sharp edges. Soft shadows: shadow-sm or shadow-md.",
+    "navigation": "Bottom Navigation Bar (Fixed) for Mobile. Hidden on Desktop (use Top Nav).",
+    "z_index": {
+      "toast": 50,
+      "modal": 40,
+      "nav": 30,
+      "dropdown": 20
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-6 py-4",
+      "ghost": "hover:bg-muted text-foreground rounded-lg"
+    },
+    "cards": {
+      "recipe_card": "bg-card text-card-foreground rounded-2xl overflow-hidden border border-border/50 shadow-sm hover:shadow-md transition-all group relative",
+      "ingredient_card": "bg-muted/50 rounded-xl p-4 flex items-center gap-3 border border-transparent hover:border-primary/20 transition-colors"
+    },
+    "inputs": {
+      "default": "bg-background border-input focus:border-primary focus:ring-primary/20 rounded-xl h-12 px-4"
+    },
+    "feedback": {
+      "toast": "Use Sonner. Style: bg-background border-border text-foreground shadow-lg rounded-xl."
+    }
+  },
+  "visual_enhancers": {
+    "texture": "Add a subtle noise texture to the background (opacity 0.03) to give it a paper feel.",
+    "shadows": "Use colored shadows. e.g., shadow-orange-500/20 for primary buttons.",
+    "gradients": "Avoid full gradients. Use subtle radial gradients for 'spotlight' effects behind hero images.",
+    "icons": "Use Lucide React. Stroke width: 1.5px (Elegant). Color: CurrentColor."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/17637109/pexels-photo-17637109.png",
+      "description": "Rich Italian food spread, warm lighting",
+      "category": "landing"
+    },
+    "chef_profile": {
+      "url": "https://images.unsplash.com/photo-1766422526750-6099697a2dd5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwY2hlZiUyMGNvb2tpbmclMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjB0aXJhbWlzdXxlbnwwfHx8fDE3Njk2MzU0NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Chef cooking in kitchen",
+      "category": "profile"
+    },
+    "ingredients_fresh": {
+      "url": "https://images.unsplash.com/photo-1633251354936-138f29f88108?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwzfHxpdGFsaWFuJTIwY2hlZiUyMGNvb2tpbmclMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjB0aXJhbWlzdXxlbnwwfHx8fDE3Njk2MzU0NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Fresh tomatoes and basil",
+      "category": "generation"
+    },
+    "recipe_pasta": {
+      "url": "https://images.unsplash.com/photo-1673081849734-98f0969d436b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHw0fHxpdGFsaWFuJTIwY2hlZiUyMGNvb2tpbmclMjBmcmVzaCUyMHZlZ2V0YWJsZXMlMjB0aXJhbWlzdXxlbnwwfHx8fDE3Njk2MzU0NjJ8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Pasta with pesto",
+      "category": "recipe_card"
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Run `yarn add @fontsource/playfair-display @fontsource/manrope` immediately.",
+    "2. UPDATE TAILWIND: Copy the `css_variables` into `src/index.css` (replace existing root/dark). Update `tailwind.config.js` to extend font families.",
+    "3. MOBILE FIRST: Always design for 375px width first. Use `w-full` and `flex-col` by default.",
+    "4. PWA OPTIMIZATION: Ensure touch targets are at least 44px. Use `min-h-[44px]` for buttons/inputs.",
+    "5. DATA-TESTID: Add `data-testid` to ALL interactive elements (buttons, inputs, cards). Format: `category-function-element` (e.g., `auth-login-button`).",
+    "6. NO MOCKING: Use the provided image URLs. Do not use placeholders.",
+    "7. LANGUAGE: The app content must be in ITALIAN as per requirements.",
+    "8. FILE EXTENSIONS: Use .js and .jsx as the project is JavaScript based."
+  ],
+  "universal_guidelines": {
+    "do_not_use": [
+      "Generic 'Inter' font for headings",
+      "Pure black (#000000)",
+      "Default blue/purple SaaS colors",
+      "Small, cramped spacing"
+    ],
+    "must_do": [
+      "Use 'Playfair Display' for all headings",
+      "Use 'Manrope' for body text",
+      "Round corners (rounded-xl or 2xl)",
+      "Add subtle noise/grain to backgrounds if possible"
+    ]
+  }
+}
