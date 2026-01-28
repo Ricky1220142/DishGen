@@ -26,6 +26,14 @@ Trasformare il sito web Smart Cooking (pagina pricing) in un'applicazione PWA co
 
 ## What's Been Implemented (Jan 2026)
 
+### Landing Page Redesign (v2)
+- Design colorato con gradienti orange/amber
+- Galleria di 9 ricette predefinite con immagini HD
+- Filtri per categoria (Tutte, Salato, Dolce, Veloce)
+- Modal interattivo con click su ricetta
+- Visualizzazione ingredienti e procedimento completo
+- Fully responsive su mobile
+
 ### Backend APIs
 - `/api/auth/register` - Registrazione utente
 - `/api/auth/login` - Login utente
