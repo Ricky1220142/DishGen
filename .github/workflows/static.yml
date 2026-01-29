@@ -1,7 +1,7 @@
 name: Deploy static content to Pages
 on:
   push:
-    branches: ["main"] # Verifica se il tuo ramo si chiama 'main' o 'principale'
+    branches: ["main"]
 permissions:
   contents: read
   pages: write
@@ -20,8 +20,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Questo punta alla tua cartella corretta
-          path: './frontend/public'
+          # Usiamo il nome della cartella che vedo nella tua foto 44
+          path: './frontend'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
