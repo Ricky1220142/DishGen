@@ -1,8 +1,8 @@
 {
-  "name": "frontend",
+  "name": "dishgen-frontend",
   "version": "0.1.0",
-  "homepage": "https://ricky1220142.github.io/DishGen/",
   "private": true,
+  "homepage": "https://ricky1220142.github.io/DishGen/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
