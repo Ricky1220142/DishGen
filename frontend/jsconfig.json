@@ -1,5 +1,9 @@
 {
-  "name": "frontend",
-  "homepage": "https://ricky1220142.github.io/DishGen/",
-  "version": "0.1.0",
-  "private": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/": ["src/"]
+    }
+  },
+  "include": ["src"]
+}
