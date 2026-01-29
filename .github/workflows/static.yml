@@ -21,7 +21,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Questo punta alla tua cartella corretta
-          path: './frontend'
+          path: './frontend/public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
